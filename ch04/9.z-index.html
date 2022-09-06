@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>z-index</title>
+    <style>
+        div {
+            padding: 3rem;
+            margin: 1rem;
+            position: fixed; /*브라우저의 left top이 원점임.*/
+        }
+
+        .one {
+            background: red;
+            left: 1rem;
+            top: 1rem;
+            z-index: 2;
+        }
+
+        .two {
+            background: green;
+            left: 3rem;
+            top: 3rem;
+            z-index: 3;
+        }
+
+        .three {
+            background: blue;
+            left: 5rem;
+            top: 5rem;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class='one'></div>
+    <div class='two'></div>
+    <div class='three'></div>
+</body>
+</html>
+
+<!-- z-index는 배치순서를 정할수가 있다. -->

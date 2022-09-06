@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>float</title>
+    <style>
+        div {
+            padding: 1rem;
+            margin: 1rem;
+            border: .1rem solid;
+            float: left;  /*세로로 돼있는 줄을 가로줄로 바꿔줌.*/
+        }
+
+        .one {
+            background: red;
+        }
+
+        .two {
+            background: orange;
+        }
+
+        .three {
+            background: yellow;
+            clear: left;        /*float left돼있는거를 초기화시키겠다는 뜻.*/
+        }
+
+        .four {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class='one'>one</div>
+    <div class='two'>two</div>
+    <div class='three'>three</div>
+    <div class='four'>four</div>
+</body>
+</html>
+
+<!--
+    창의 크기는 width로 말한다.
+    height는 content를 둘러싸는 크기로 설정된다.
+-->

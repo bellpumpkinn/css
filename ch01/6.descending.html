@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>descending selector</title>
+    <style>
+        section ul {
+            border: 0.2rem solid;  /*border:선의 굵기, 단위:픽셀, rem, em   solid는 실선*/
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <ul>
+            <li>예약방법
+                <ul>
+                    <li>전화</li>
+                    <li>인터넷</li>
+                </ul>
+            </li>
+            <li>요금
+                <ul>
+                    <li>성수기: 20만원</li>
+                    <li>비수기: 10만원</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
+
+<!--
+    스페이스 하나 붙이면 자식이라고 생각하면된다.
+    이걸 descending
+
+    단위: 픽셀, em, rem
+
+    rem쓰는게 em쓰는거 보다 안정적.
+-->
